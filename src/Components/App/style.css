@@ -1,0 +1,20 @@
+.display-sec{
+    width: 100vw;
+    background-color: rgb(180, 246, 224);
+    display: flex;
+}
+.aside-section{
+   background-color: aliceblue;
+  position: sticky;
+  top: 40px;
+}
+.header-section{
+    position: sticky;
+    top: 0px;
+
+}
+.cart-section{
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+}

@@ -23,7 +23,7 @@ const Card = (props) => {
           </div>
         </div>
 
-        <button className="add">Add to cart</button>
+        <button onClick={() =>props.handleAddToCart({...props.product, quantity : 1})} className="add">Add to cart</button>
       </div>
     </div>
   );

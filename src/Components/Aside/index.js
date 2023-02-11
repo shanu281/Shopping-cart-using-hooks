@@ -2,7 +2,7 @@ import React from "react";
 import Sort from "../Sort";
 import "./style.css";
 
-const Aside = () => {
+const Aside = (props) => {
   let allSizes = ["S", "XS", "M", "X", "L", "XL", "XXL"];
 
   return (
@@ -11,7 +11,7 @@ const Aside = () => {
         <h4>Sizes: </h4>
         <aside>
           {allSizes.map((size, i) => {
-            return <span key={size} className="size">{size}</span>;
+            return <span onClick={() => props.handleSize(size)} key={size} className={props.selectedSize == size ? "active size" : "size"}>{size}</span>;
           })}
         </aside>
         <Sort />
