@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css"
 
-function Sort() {
+function Sort(props) {
     return (
         <>
             <form >
                 <label ><h2>Sort products:</h2></label>
-                <select  name="sort" id="sort">
+                <select onClick={props.handleSorting} name="sort" id="sort">
                    
                     <option value="lowest">lowest to highest</option>
                     <option value="highest">highest to lowest</option>

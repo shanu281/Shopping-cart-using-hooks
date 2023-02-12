@@ -16,7 +16,7 @@ const Header = (props) => {
             src={`images/download.png`}
             alt="cart image"
           />
-          <span className="cart-quantity position-2">
+          <span className="cart-quantity position-3">
             <h2>
               {props.cartValue.reduce(
                 (acc, { quantity = 0 }) => (acc += quantity),
@@ -25,17 +25,7 @@ const Header = (props) => {
             </h2>
           </span>
         </div>
-        {/* <h1 onClick={props.toggleCart}>
-          <FaShoppingCart />
-        </h1>
-        <span className="cart-quantity position-3">
-          <h2>
-            {props.cartValue.reduce(
-              (acc, { quantity = 0 }) => (acc += quantity),
-              0
-            )}
-          </h2>
-        </span> */}
+       
       </div>
     </div>
   );

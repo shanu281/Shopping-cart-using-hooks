@@ -14,7 +14,7 @@ const Aside = (props) => {
             return <span onClick={() => props.handleSize(size)} key={size} className={props.selectedSize == size ? "active size" : "size"}>{size}</span>;
           })}
         </aside>
-        <Sort />
+        <Sort handleSorting={props.handleSorting} />
       </div>
     </div>
   );

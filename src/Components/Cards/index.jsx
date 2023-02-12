@@ -7,7 +7,7 @@ function Cards(props) {
     <>
       <section className="main">
         <div>
-          <h1 className="total-products">16 Product(s) found</h1>
+          <h1 className="total-products">16  Product(s) found</h1>
         </div>
         <div className="card-container">
           {props.selectedSize === ""

@@ -11,7 +11,7 @@ const App = () => {
   const [selectedSize, setSelectedSize] = useState("");
   const [cartValue, setCartValue] = useState([]);
   const [price, setPrice] = useState([]);
-  const [openCart, setOpenCart] = useState(false);
+  const [openCart, setOpenCart] = useState(true);
   const [sorted, setSorted] = useState("");
   const [quantity, setQuantity] = useState();
 
@@ -25,7 +25,6 @@ const App = () => {
   const handleSorting = (event) => {
     const value = event.target.value;
     setSorted(value);
-    console.log(sorted);
   };
   const handleAddToCart = (product) => {
     setCartValue(cartValue.concat(product));
@@ -53,7 +52,7 @@ const App = () => {
       </div>
       <div className="display-sec">
         <div className="aside-section">
-          <Aside handleSize={handleSize} selectedSize={selectedSize} />
+          <Aside handleSize={handleSize} selectedSize={selectedSize} handleSorting={handleSorting}/>
         </div>
         <div className="cards-sec">
           <Cards
